@@ -1,11 +1,12 @@
 import React from "react";
 import '../styles/styles.scss';
+import Layout from "../components/layout";
 
 const IndexPage = ({ location }) => {
   return (
-    <body>
+    <Layout location={location}>
       <p>He's the boogie woogie bugle boy of Company B.</p>
-    </body>
+    </Layout>
   );
 };
 

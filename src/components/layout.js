@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Layout = ({ children, location }) => {
-    const isHome = locaion.pathname === '/';
+    const isHome = location.pathname === '/';
     const [isLoading, setIsLoading] = useState(isHome);
 
     const handleExternalLinks = () => {
@@ -36,6 +36,14 @@ const Layout = ({ children, location }) => {
 
         handleExternalLinks();
     }, [isLoading]);
+
+    return (
+        <body>
+            <main>
+                {children}
+            </main>
+        </body>
+    );
 };
 
 export default Layout;
