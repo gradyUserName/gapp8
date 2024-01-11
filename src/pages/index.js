@@ -4,7 +4,7 @@ import '../styles/styles.scss';
 const IndexPage = ({ location }) => {
   return (
     <body>
-      <p>test</p>
+      <p>He's the boogie woogie bugle boy of Company B.</p>
     </body>
   );
 };
