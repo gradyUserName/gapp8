@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Nav from "./nav";
 
 const Layout = ({ children, location }) => {
     const isHome = location.pathname === '/';
@@ -39,6 +40,7 @@ const Layout = ({ children, location }) => {
 
     return (
         <body>
+            <Nav />
             <main>
                 {children}
             </main>
