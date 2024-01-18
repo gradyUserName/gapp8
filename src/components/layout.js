@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./nav";
+import Social from "./social";
+import Email from "./email";
 
 const Layout = ({ children, location }) => {
     const isHome = location.pathname === '/';
@@ -41,6 +43,8 @@ const Layout = ({ children, location }) => {
     return (
         <body>
             <Nav />
+            <Social />
+            <Email />
             <main>
                 {children}
             </main>
