@@ -1,3 +1,6 @@
+// import Open Sans from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 // Colors
 $green: #64ffda;
 $slate: #8892b0;
@@ -9,5 +12,12 @@ $fz-sm: 14px;
 $fz-md: 16px;
 $fz-lg: 18px;
 
+// Fonts
+$font-default: 'Open Sans', sans-serif;
+$font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+
 // Spacing
 $nav-height: 100px;
+
+// Transition
+$transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
