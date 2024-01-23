@@ -5,7 +5,7 @@ import useScrollDirection from "../hooks/useScrollDirection";
 import '../styles/nav.scss';
 
 const Nav = () => {
-    const scrollDirection = useScrollDirection('down');
+    const scrollDirection = useScrollDirection('up');
     const [scrolledToTop, setScrolledToTop] = useState(true);
 
     const handleScroll = () => {
@@ -21,7 +21,7 @@ const Nav = () => {
     }, []);
 
     return (
-        <div className="nav" id="nav">
+        <div className={scrollDirection === 'up' || scrolledToTop === true ? "nav" : "nav-hidden"} id="nav">
             <Link to="/" aria-label="home">
                 <Logo />
             </Link>
