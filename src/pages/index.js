@@ -7,6 +7,7 @@ const IndexPage = ({ location }) => {
   return (
     <Layout location={location}>
       <Hero />
+      <Hero />
     </Layout>
   );
 };
