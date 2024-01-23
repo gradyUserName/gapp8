@@ -1,12 +1,28 @@
 @import 'variables';
 
 .hero {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     min-height: 100vh;
-    padding-top: $nav-height;
 
     h1 {
-        margin: 0 0 30px 4px;
+        margin: 0 0 15px 0;
+        font-size: 18px;
+    }
+
+    h2 {
+        margin: 0 0 15px 0;
+        font-size: 60px;
+    }
+
+    h3 {
+        margin: 0 0 15px 0;
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
     }
 }
