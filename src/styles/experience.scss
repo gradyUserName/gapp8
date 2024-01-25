@@ -1,0 +1,96 @@
+@import 'variables';
+
+.experience {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 400px;
+    max-width: 1000px;
+    margin: 0 0 200px 0;
+
+    h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        align-self: start;
+        justify-self: start;
+        display: flex;
+        margin: 0 0 20px 20px;
+        font-size: $fs-section-header;
+
+        &:after {
+            content: '';
+            background-color: black;
+            width: 300px;
+            height: 2px;
+            align-self: center;
+            margin-left: 20px;
+        }
+    }
+
+    .job-list {
+        grid-column-start: 1;
+
+        .job-tab {
+            border-width: 0px;
+            border-left: 2px solid lightgray;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 0 0 10px;
+            transition: $transition;
+            background-color: transparent;
+            padding-block: 0px;
+
+            p {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        .job-tab-active {
+            @extend .job-tab;
+            border-left: 2px solid black;
+        }
+    }
+
+    .job-info {
+        grid-column-start: 2;
+        margin: 0 0 0 20px;
+        animation: fadeIn 1s;
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .job-title {
+            display: flex;
+            font-size: 18px;
+            margin: 0 0 5px 0;
+
+            .job-title-title {
+                margin: 0 10px 0 0;
+            }
+
+            .job-title-at {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        .job-dates {
+            margin: 0 0 15px 0;
+        }
+
+        .job-bullets {
+            list-style: none;
+
+            li {
+                display: flex;
+                margin: 0 0 15px 0;
+
+                &:before {
+                    content: '○';
+                    margin: 0 10px 0 5px;
+                }
+            }
+        }
+    }
+}

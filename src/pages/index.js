@@ -3,12 +3,14 @@ import '../styles/styles.scss';
 import Layout from "../components/layout";
 import Hero from "../components/sections/hero";
 import About from "../components/sections/about";
+import Experience from "../components/sections/experience";
 
 const IndexPage = ({ location }) => {
   return (
     <Layout location={location}>
       <Hero />
       <About />
+      <Experience />
     </Layout>
   );
 };
