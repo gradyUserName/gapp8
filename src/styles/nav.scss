@@ -1,27 +1,31 @@
 @import 'variables';
 
 .nav {
+    border: 1px solid red;
     position: fixed;
     top: 0;
     z-index: 11;
     width: 100%;
     height: $nav-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     backdrop-filter: blur(10px);
     transition: $transition;
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin: 0 0 0 20px;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0 40px 0 0;
+    }
 }
 
 .nav-hidden {
-    position: fixed;
-    top: 0;
-    z-index: 11;
-    width: 100%;
-    height: $nav-height;
-    backdrop-filter: blur(10px);
-    transition: $transition;
-    transform: translateY(-100px)
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
+    @extend .nav;
+    transform: translateY($nav-height * -1);
 }
