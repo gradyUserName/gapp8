@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Nav from "./nav";
 import Social from "./social";
 import Email from "./email";
 import Footer from "./footer";
 
 const Layout = ({ children, location }) => {
-    const isHome = location.pathname === '/';
-    const [isLoading, setIsLoading] = useState(isHome);
-
     const handleExternalLinks = () => {
         const links = document.querySelectorAll('a');
 
@@ -23,10 +20,6 @@ const Layout = ({ children, location }) => {
     };
 
     useEffect(() => {
-        if (isLoading) {
-            return;
-        }
-
         if (location.hash) {
             const id = location.hash.substring(1);
             setTimeout(() => {
@@ -39,7 +32,7 @@ const Layout = ({ children, location }) => {
         }
 
         handleExternalLinks();
-    }, [isLoading]);
+    }, [location.hash]);
 
     return (
         <body>

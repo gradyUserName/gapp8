@@ -26,7 +26,7 @@ const Projects = () => {
                         <Github />
                     </a>
                 </div>
-                <img src={ytdWindow} alt="YouTube Downloader Image" />
+                <img src={ytdWindow} alt="YouTube Downloader" />
             </div>
         </div>
     );
