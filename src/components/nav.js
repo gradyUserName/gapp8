@@ -48,6 +48,9 @@ const Nav = () => {
                 <li>
                     <Link to="/#projects" onClick={handleLinkClick} aria-label="Projects">Projects</Link>
                 </li>
+                <li>
+                    <Link to="/#contact" onClick={handleLinkClick} aria-label="Contact">Contact</Link>
+                </li>
             </ul>
         </div>
     );
