@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/projects.scss";
+import Github from "../icons/github";
 import ytdWindow from "../../images/ytd.png";
 
 const Projects = () => {
@@ -21,6 +22,9 @@ const Projects = () => {
                         <li>Tkinter</li>
                         <li>Pytube</li>
                     </ul>
+                    <a href="https://github.com/gradyUserName/python-youtube-downloader" target="_blank" rel="noopener noreferrer">
+                        <Github />
+                    </a>
                 </div>
                 <img src={ytdWindow} alt="YouTube Downloader Image" />
             </div>
