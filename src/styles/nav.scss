@@ -30,5 +30,6 @@
 
 .nav-hidden {
     @extend .nav;
+    backdrop-filter: none;
     transform: translateY($nav-height * -1);
 }
