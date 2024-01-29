@@ -35,7 +35,7 @@ const Nav = () => {
 
     return (
         <div className={scrollDirection === 'up' || scrolledToTop === true ? "nav" : "nav-hidden"} id="nav">
-            <Link to="/#hero" onClick={scrollToTop} aria-label="home">
+            <Link to="/" onClick={scrollToTop} aria-label="home">
                 <Logo />
             </Link>
             <ul>
