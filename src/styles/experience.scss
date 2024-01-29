@@ -20,7 +20,7 @@
 
         &:after {
             content: '';
-            background-color: black;
+            background-color: $yellow;
             width: 300px;
             height: 2px;
             align-self: center;
@@ -33,7 +33,7 @@
 
         .job-tab {
             border-width: 0px;
-            border-left: 2px solid lightgray;
+            border-left: 2px solid $gray;
             height: 50px;
             display: flex;
             align-items: center;
@@ -50,7 +50,7 @@
 
         .job-tab-active {
             @extend .job-tab;
-            border-left: 2px solid black;
+            border-left: 2px solid $yellow;
         }
     }
 
@@ -74,11 +74,17 @@
 
             .job-title-at {
                 margin: 0 10px 0 0;
+                color: $yellow;
+            }
+
+            .job-title-company {
+                color: $yellow;
             }
         }
 
         .job-dates {
             margin: 0 0 15px 0;
+            color: $gray;
         }
 
         .job-bullets {
@@ -91,6 +97,7 @@
                 &:before {
                     content: '○';
                     margin: 0 10px 0 5px;
+                    color: $yellow;
                 }
             }
         }

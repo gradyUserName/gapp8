@@ -18,7 +18,7 @@
         &:before,
         &:after {
             content: '';
-            background-color: black;
+            background-color: $yellow;
             width: 200px;
             height: 2px;
             align-self: center;
@@ -42,7 +42,7 @@
     a {
         grid-row: 3;
         justify-self: center;
-        border: 2px solid black;
+        border: 2px solid $yellow;
         border-radius: 10px;
         padding: 10px 20px;
         transition: $transition;
@@ -51,7 +51,7 @@
         &:focus {
             transition: $transition;
             transform: translate(-3px, -3px);
-            box-shadow: 3px 3px 0 0 black;
+            box-shadow: 3px 3px 0 0 $yellow;
         }
     }
 }

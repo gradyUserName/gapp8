@@ -15,7 +15,7 @@
 
         &:after {
             content: '';
-            background-color: black;
+            background-color: $yellow;
             width: 300px;
             height: 2px;
             align-self: center;
@@ -45,6 +45,7 @@
 
             h4 {
                 margin: 0 0 10px 0;
+                color: $yellow;
             }
     
             h3 {
@@ -54,7 +55,7 @@
     
             .project-description {
                 width: 400px;
-                background-color: lightgray;
+                background-color: $dark-gray;
                 border-radius: 5px;
                 padding: 20px;
                 margin: 0 0 10px 0;
@@ -67,6 +68,7 @@
 
                 li {
                     margin: 0 10px 0 0;
+                    color: $gray;
                 }
             }
 
@@ -74,7 +76,8 @@
                 width: 30px;
                 height: 30px;
                 position: static;
-                margin: 10px 0 0 0;
+                margin: 15px 0 0 0;
+                filter: invert(100%);
             }
         }
     }

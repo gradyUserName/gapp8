@@ -28,7 +28,7 @@
             width: 2px;
             height: 90px;
             margin: 0 auto;
-            background-color: black;
+            background-color: $yellow;
         }
     }
     
@@ -43,6 +43,7 @@
         height: 30px;
         margin: 10px;
         transition: $transition;
+        filter: invert(100%);
 
         &:hover,
         &:focus {

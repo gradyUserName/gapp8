@@ -9,9 +9,19 @@
     text-decoration: none;
 }
 
-// set font
 body {
     font-family: $font-default;
+    background-color: $black;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a,
+    li {
+        color: $white;
+    }
 }
 
 main {
