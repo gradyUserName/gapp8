@@ -34,5 +34,10 @@
         font-size: 14px;
         letter-spacing: .1em;
         writing-mode: vertical-rl;
+        transition: .25s;
+
+        &:hover {
+            color: $yellow;
+        }
     }
 }

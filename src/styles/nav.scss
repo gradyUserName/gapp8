@@ -16,7 +16,6 @@
         width: 50px;
         height: 50px;
         margin: 0 0 0 20px;
-        filter: invert(100%);
     }
     
     ul {
@@ -25,6 +24,14 @@
 
         li {
             margin: 0 40px 0 0;
+
+            a {
+                transition: .25s;
+                
+                &:hover {
+                    color: $yellow;
+                }
+            }
         }
     }
 }
