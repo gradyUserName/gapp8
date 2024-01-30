@@ -74,6 +74,10 @@
     }
 
     @media (max-width: 1000px) {
+        p {
+            margin: 0 0 15px 0;
+        }
+
         img {
             grid-column-start: 1;
             grid-row-start: 4;
@@ -83,15 +87,12 @@
 
     @media (max-width: 700px) {
         h2 {
+            font-size: 20px;
+
             &:after {
-                width: 200px;
+                width: clamp(100px, 180px, 200px);
             }
         }
-
-        p {
-            margin: 0 0 15px 0;
-        }
-
         ul {
             grid-template-columns: 160px 160px;
         }
