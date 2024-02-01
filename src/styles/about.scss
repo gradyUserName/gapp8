@@ -105,4 +105,8 @@
             grid-template-columns: 160px 160px;
         }
     }
+
+    @media (max-width: 600px) {
+        marging: 0 0 50px 0;
+    }
 }

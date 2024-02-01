@@ -146,6 +146,8 @@
     }
 
     @media (max-width: 600px) {
+        margin: 0 0 50px 0;
+        
         .job-list {
             grid-column: 1 / 3;
             grid-row: 2;
