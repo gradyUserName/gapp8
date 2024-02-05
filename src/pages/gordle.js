@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Gordle = () => {};
+const Gordle = () => {
+    const [solution, setSolution] = useState("brave");
+
+    return (
+        <div className="gordle">
+            <h1>Gordle</h1>
+        </div>
+    );
+};
 
 export default Gordle;
 
