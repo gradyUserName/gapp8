@@ -5,7 +5,7 @@ import useScrollDirection from "../hooks/useScrollDirection";
 import '../styles/nav.scss';
 
 const Nav = () => {
-    const scrollDirection = useScrollDirection('up');
+    const scrollDirection = useScrollDirection('up', 1000);
     const [scrolledToTop, setScrolledToTop] = useState(true);
 
     const handleScroll = () => {
@@ -39,6 +39,9 @@ const Nav = () => {
                 <Logo />
             </Link>
             <ul>
+                <li>
+                    <Link to="/gordle" aria-label="Gordle">Gordle</Link>
+                </li>
                 <li>
                     <Link to="/#about" onClick={handleLinkClick} aria-label="About">About</Link>
                 </li>

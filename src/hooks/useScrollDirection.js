@@ -5,7 +5,7 @@ const useScrollDirection = ({ initialDirection, thresholdPixels, off }) => {
     const [ticking, setTicking] = useState(false);
 
     useEffect(() => {
-        const threshold = thresholdPixels || 0;
+        const threshold = thresholdPixels || 100;
         let lastScrollY = window.scrollY;
 
         const updateScrollDir = () => {
