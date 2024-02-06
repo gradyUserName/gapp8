@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import useGordle from "../hooks/useGordle";
+import Grid from "../components/gordle/grid";
+import '../styles/gordle.scss';
 
 const Gordle = () => {
     const [solution, setSolution] = useState("brave");
@@ -15,6 +17,7 @@ const Gordle = () => {
         <div className="gordle">
             <h1>Gordle</h1>
             <p>{currentGuess}</p>
+            <Grid currentGuess={currentGuess} guesses={guesses} turn={turn}/>
         </div>
     );
 };
