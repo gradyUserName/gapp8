@@ -7,11 +7,32 @@ const useGordle = (solution) => {
     const [history, setHistory] = useState([]);
     const [isCorrect, setIsCorrect] = useState(false);
 
-    const formatGuess = () => {};
+    const formatGuess = () => {
+        console.log("Formatting guess...")
+    };
 
     const addNewGuess = () => {};
 
     const handleKeyUp = ({ key }) => {
+        if (key === 'Enter') {
+            if (turn > 5) {
+                console.log("Out of guesses")
+                return;
+            }
+
+            if (history.includes(currentGuess)) {
+                console.log("Already guessed that word")
+                return;
+            }
+
+            if (currentGuess.length !== 5) {
+                console.log("Guess is too short")
+                return;
+            }
+
+            formatGuess();
+        }
+
         if (key === 'Backspace') {
             setCurrentGuess((prev) => {
                 return prev.slice(0, -1);
