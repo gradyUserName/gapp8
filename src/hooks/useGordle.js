@@ -8,7 +8,26 @@ const useGordle = (solution) => {
     const [isCorrect, setIsCorrect] = useState(false);
 
     const formatGuess = () => {
-        console.log("Formatting guess...")
+        let solutionArray = [...solution];
+        let formattedGuess = [...currentGuess].map((l) => {
+            return {key: l, color:"gray"};
+        });
+
+        formattedGuess.forEach((l, i) => {
+            if (solutionArray[i] === l.key) {
+                formattedGuess[i].color = "green";
+                solutionArray[i] = null;
+            }
+        });
+
+        formattedGuess.forEach((l, i) => {
+            if (solutionArray.includes(l.key) && l.color !== "green") {
+                formattedGuess[i].color = "yellow";
+                solutionArray[solutionArray.indexOf(l.key)] = null;
+            }
+        });
+
+        return formattedGuess;
     };
 
     const addNewGuess = () => {};
@@ -30,7 +49,8 @@ const useGordle = (solution) => {
                 return;
             }
 
-            formatGuess();
+            const formatted = formatGuess();
+            console.log(formatted);
         }
 
         if (key === 'Backspace') {
