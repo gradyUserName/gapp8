@@ -12,11 +12,18 @@ const useGordle = (solution) => {
     const addNewGuess = () => {};
 
     const handleKeyUp = ({ key }) => {
+        if (key === 'Backspace') {
+            setCurrentGuess((prev) => {
+                return prev.slice(0, -1);
+            });
+            return;
+        }
+
         if(/^[A-Za-z]$/.test(key)) {
             if (currentGuess.length < 5) {
                 setCurrentGuess((prev) => {
                     return prev + key;
-                })
+                });
             }
         }
     };
