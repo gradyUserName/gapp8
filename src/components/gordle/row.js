@@ -5,7 +5,7 @@ const Row = ({ guess }) => {
         return (
             <div className="row past">
                 {guess.map((l, i) => {
-                    return <div key={i} className={l.key}>{l.key}</div>
+                    return <div key={i} className={l.color}>{l.key}</div>
                 })}
             </div>
         );

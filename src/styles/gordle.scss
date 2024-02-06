@@ -18,4 +18,19 @@
         font-size: 2em;
         color: $white;
     }
+
+    .gray {
+        background: $gray;
+        border-color: $gray;
+    }
+
+    .yellow {
+        background: $yellow;
+        border-color: $yellow;
+    }
+
+    .green {
+        background: $green;
+        border-color: $green;
+    }
 }
