@@ -3,7 +3,7 @@ import useGordle from "../hooks/useGordle";
 
 const Gordle = () => {
     const [solution, setSolution] = useState("brave");
-    const { currentGuess, handleKeyUp } = useGordle(solution);
+    const { currentGuess, handleKeyUp, guesses, isCorrect, turn } = useGordle(solution);
 
     useEffect(() => {
         window.addEventListener('keyup', handleKeyUp);
