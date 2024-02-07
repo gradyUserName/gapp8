@@ -20,7 +20,11 @@
             font-weight: bold;
             font-size: 2em;
             color: $white;
+        }
 
+        .gray,
+        .yellow,
+        .green {
             &:nth-child(2) {
                 animation-delay: .3s;
             }
@@ -55,6 +59,11 @@
             --border-color: #09bc8a;
             animation: flip .75s ease forwards;
         }
+
+        .filled {
+            animation-delay: 0s;
+            animation: bounce .2s ease-in-out forwards;
+        }
     }
 
     @keyframes flip {
@@ -78,6 +87,20 @@
             transform: rotateX(0);
             background: var(--background);
             border-color: var(--border-color);
+        }
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: scale(1);
+            border-color: $gray;
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+            border-color: $white;
         }
     }
 }
