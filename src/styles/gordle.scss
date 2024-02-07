@@ -2,7 +2,7 @@
 
 .gordle {
     text-align: center;
-    
+
     .row {
         text-align: center;
         display: flex;
@@ -20,21 +20,64 @@
             font-weight: bold;
             font-size: 2em;
             color: $white;
+
+            &:nth-child(2) {
+                animation-delay: .3s;
+            }
+    
+            &:nth-child(3) {
+                animation-delay: .6s;
+            }
+    
+            &:nth-child(4) {
+                animation-delay: .9s;
+            }
+    
+            &:nth-child(5) {
+                animation-delay: 1.2s;
+            }
         }
     
         .gray {
-            background: $gray;
-            border-color: $gray;
+            --background: #94949E;
+            --border-color: #94949E;
+            animation: flip .75s ease forwards;
         }
     
         .yellow {
-            background: $yellow;
-            border-color: $yellow;
+            --background: #FABD16;
+            --border-color: #FABD16;
+            animation: flip .75s ease forwards;
         }
     
         .green {
-            background: $green;
-            border-color: $green;
+            --background: #09bc8a;
+            --border-color: #09bc8a;
+            animation: flip .75s ease forwards;
+        }
+    }
+
+    @keyframes flip {
+        0% {
+            transform: rotateX(0);
+            background: $black;
+            border-color: $gray;
+        }
+        45% {
+            transform: rotateX(90deg);
+            background: $black;
+            border-color: $gray;
+        }
+        55% {
+            transform: rotateX(90deg);
+            background: var(--background);
+            border-color: var(--border-color);
+
+        }
+        100% {
+            transform: rotateX(0);
+            background: var(--background);
+            border-color: var(--border-color);
         }
     }
 }
