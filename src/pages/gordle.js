@@ -16,7 +16,6 @@ const Gordle = () => {
     return (
         <div className="gordle">
             <h1>Gordle</h1>
-            <p>{currentGuess}</p>
             <Grid currentGuess={currentGuess} guesses={guesses} turn={turn}/>
         </div>
     );

@@ -1,36 +1,40 @@
 @import 'variables';
 
-.row {
+.gordle {
     text-align: center;
-    display: flex;
-    justify-content: center;
-
-    div {
-        display: block;
-        width: 60px;
-        height: 60px;
-        border: 1px solid $gray;
-        margin: 4px;
+    
+    .row {
         text-align: center;
-        line-height: 60px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 2em;
-        color: $white;
-    }
-
-    .gray {
-        background: $gray;
-        border-color: $gray;
-    }
-
-    .yellow {
-        background: $yellow;
-        border-color: $yellow;
-    }
-
-    .green {
-        background: $green;
-        border-color: $green;
+        display: flex;
+        justify-content: center;
+    
+        div {
+            display: block;
+            width: 60px;
+            height: 60px;
+            border: 1px solid $gray;
+            margin: 4px;
+            text-align: center;
+            line-height: 60px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 2em;
+            color: $white;
+        }
+    
+        .gray {
+            background: $gray;
+            border-color: $gray;
+        }
+    
+        .yellow {
+            background: $yellow;
+            border-color: $yellow;
+        }
+    
+        .green {
+            background: $green;
+            border-color: $green;
+        }
     }
 }
