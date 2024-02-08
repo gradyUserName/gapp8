@@ -66,6 +66,22 @@
         }
     }
 
+    .keypad {
+        max-width: 500px;
+        margin: 20px auto;
+        color: $white;
+
+        div {
+            margin: 5px;
+            width: 40px;
+            height: 50px;
+            background: $dark-gray;
+            display: inline-block;
+            border-radius: 6px;
+            line-height: 50px;
+        }
+    }
+
     @keyframes flip {
         0% {
             transform: rotateX(0);
