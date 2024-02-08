@@ -11,8 +11,16 @@ const Gordle = () => {
     useEffect(() => {
         window.addEventListener('keyup', handleKeyUp);
 
+        if (isCorrect) {
+          window.removeEventListener('keyup', handleKeyUp);
+        }
+
+        if (turn > 5) {
+          window.removeEventListener('keyup', handleKeyUp);
+        }
+
         return () => window.removeEventListener('keyup', handleKeyUp);
-    }, [handleKeyUp]);
+    }, [handleKeyUp, isCorrect, turn]);
 
     return (
         <div className="gordle">
