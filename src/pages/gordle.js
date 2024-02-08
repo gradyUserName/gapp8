@@ -6,7 +6,7 @@ import Keypad from "../components/gordle/keypad";
 
 const Gordle = () => {
     const [solution, setSolution] = useState("brave");
-    const { currentGuess, handleKeyUp, guesses, isCorrect, turn } = useGordle(solution);
+    const { currentGuess, handleKeyUp, guesses, isCorrect, turn, usedKeys } = useGordle(solution);
 
     useEffect(() => {
         window.addEventListener('keyup', handleKeyUp);
@@ -18,7 +18,7 @@ const Gordle = () => {
         <div className="gordle">
             <h1>Gordle</h1>
             <Grid currentGuess={currentGuess} guesses={guesses} turn={turn}/>
-            <Keypad />
+            <Keypad usedKeys={usedKeys} />
         </div>
     );
 };

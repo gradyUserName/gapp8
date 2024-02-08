@@ -3,6 +3,10 @@
 .gordle {
     text-align: center;
 
+    h1 {
+        margin: 20px auto;
+    }
+
     .row {
         text-align: center;
         display: flex;
@@ -43,8 +47,8 @@
         }
     
         .gray {
-            --background: #94949E;
-            --border-color: #94949E;
+            --background: #3A3A40;
+            --border-color: #3A3A40;
             animation: flip .75s ease forwards;
         }
     
@@ -71,14 +75,31 @@
         margin: 20px auto;
         color: $white;
 
-        div {
-            margin: 5px;
-            width: 40px;
-            height: 50px;
-            background: $dark-gray;
-            display: inline-block;
-            border-radius: 6px;
-            line-height: 50px;
+        .kb-row {
+            div {
+                margin: 5px;
+                width: 40px;
+                height: 50px;
+                background: $gray;
+                display: inline-block;
+                border-radius: 6px;
+                line-height: 50px;
+            }
+    
+            .gray {
+                background: $dark-gray;
+                transition: all .5s ease-in;
+            }
+    
+            .yellow {
+                background: $yellow;
+                transition: all .5s ease-in;
+            }
+    
+            .green {
+                background: $green;
+                transition: all .5s ease-in;
+            }
         }
     }
 
