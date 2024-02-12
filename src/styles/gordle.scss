@@ -104,6 +104,19 @@
                 background: $green;
                 transition: all .5s ease-in;
             }
+
+            .kb-backspace,
+            .kb-enter {
+                width: 120px;
+            }
+
+            .kb-backspace {
+                background: #C94418;
+            }
+
+            .kb-enter {
+                background: #0099CC;
+            }
         }
     }
 

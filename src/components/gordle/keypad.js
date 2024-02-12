@@ -28,6 +28,10 @@ const Keypad = ({ usedKeys }) => {
                     })}
                 </div>
             ))}
+            <div className="kb-row">
+                <button className="kb-backspace" onClick={() => simulateKeyUp("Backspace")}>Backspace</button>
+                <button className="kb-enter" onClick={() => simulateKeyUp("Enter")}>Enter</button>
+            </div>
         </div>
     );
 };
