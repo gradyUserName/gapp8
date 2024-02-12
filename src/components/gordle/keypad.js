@@ -11,6 +11,11 @@ const lettersObject = {
 const Keypad = ({ usedKeys }) => {
     const [letters, setLetters] = useState(lettersObject.letters);
 
+    const simulateKeyUp = (key) => {
+        const event = new KeyboardEvent("keyup", { key });
+        window.dispatchEvent(event);
+    };
+
     return (
         <div className="keypad">
             {letters.map((row, rowIndex) => (
@@ -18,7 +23,7 @@ const Keypad = ({ usedKeys }) => {
                     {row.map((key) => {
                         const color = usedKeys[key];
                         return (
-                            <div key={key} className={color}>{key}</div>
+                            <button key={key} className={color} onClick={() => simulateKeyUp(key)}>{key}</button>
                         )
                     })}
                 </div>
