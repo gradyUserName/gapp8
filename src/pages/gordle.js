@@ -14,10 +14,12 @@ const Gordle = () => {
         window.addEventListener('keyup', handleKeyUp);
 
         if (isCorrect) {
+          setTimeout(() => setShowModal(true), 3000);
           window.removeEventListener('keyup', handleKeyUp);
         }
 
         if (turn > 5) {
+          setTimeout(() => setShowModal(true), 3000);
           window.removeEventListener('keyup', handleKeyUp);
         }
 
@@ -29,7 +31,7 @@ const Gordle = () => {
             <h1>Gordle</h1>
             <Grid currentGuess={currentGuess} guesses={guesses} turn={turn}/>
             <Keypad usedKeys={usedKeys} />
-            <Modal />
+            {showModal && <Modal isCorrect={isCorrect} turn={turn} solution={solution} />}
         </div>
     );
 };
