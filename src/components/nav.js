@@ -40,9 +40,6 @@ const Nav = () => {
             </Link>
             <ul>
                 <li>
-                    <Link to="/gordle" aria-label="Gordle">Gordle</Link>
-                </li>
-                <li>
                     <Link to="/#about" onClick={handleLinkClick} aria-label="About">About</Link>
                 </li>
                 <li>

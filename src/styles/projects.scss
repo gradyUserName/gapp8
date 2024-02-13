@@ -27,9 +27,17 @@
         }
     }
 
-    .project {
+    #gordle {
         grid-column: 1;
         grid-row: 2;
+    }
+
+    #ytd {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .project {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         position: relative;
@@ -53,7 +61,7 @@
                 color: $yellow;
             }
     
-            h3 {
+            .project-title {
                 margin: 0 0 15px 0;
                 font-size: 22px;
             }

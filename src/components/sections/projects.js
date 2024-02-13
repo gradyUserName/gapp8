@@ -7,6 +7,27 @@ const Projects = () => {
     return (
         <div className="projects" id="projects">
             <h2>Things I've made</h2>
+            <div className="project" id="gordle">
+                <div className="project-info">
+                    <h4>Featured Project</h4>
+                    <a href="/gordle" className="project-title" target="_blank" rel="noopener noreferrer">Gordle</a>
+                    <div className="project-description">
+                        <p>
+                            A Wordle clone. Get 6 chances to guess a 5-letter word, with 
+                            feedback given on each guess in the form of colored tiles.
+                        </p>
+                    </div>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Gatsby</li>
+                    </ul>
+                    <a href="gradyUserName/gapp8/blob/main/src/pages/gordle.js" target="_blank" rel="noopener noreferrer">
+                        <Github />
+                    </a>
+                </div>
+                <img className="splash" src={ytdWindow} alt="YouTube Downloader" />
+            </div>
             <div className="project" id="ytd">
                 <div className="project-info">
                     <h4>Featured Project</h4>
