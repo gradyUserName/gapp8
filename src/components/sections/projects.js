@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/projects.scss";
 import Github from "../icons/github";
+import gordle from '../../images/gordle.png';
 import ytdWindow from "../../images/ytd.png";
 
 const Projects = () => {
@@ -26,12 +27,12 @@ const Projects = () => {
                         <Github />
                     </a>
                 </div>
-                <img className="splash" src={ytdWindow} alt="YouTube Downloader" />
+                <img className="splash" src={gordle} alt="Gordle" />
             </div>
             <div className="project" id="ytd">
                 <div className="project-info">
                     <h4>Featured Project</h4>
-                    <h3>YouTube Video Downloader</h3>
+                    <a className="project-title" href="https://github.com/gradyUserName/python-youtube-downloader" target="_blank" rel="noopener noreferrer">YouTube Video Downloader</a>
                     <div className="project-description">
                         <p>
                             A simple Python application that lets you download 

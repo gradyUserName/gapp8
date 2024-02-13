@@ -44,9 +44,36 @@
         height: 350px;
         align-items: center;
 
+        &:nth-of-type(even) {
+            img {
+                left: 0;
+            }
+
+            .project-info {
+                grid-column: 5 / 11;
+                justify-self: end;
+                
+                h4,
+                .project-description,
+                .project-title,
+                a {
+                    text-align: right;
+                }
+
+                ul {
+                    justify-content: right;
+                }
+            }
+        }
+
+        a {
+            display: block;
+        }
+
         img {
             z-index: 0;
             max-width: 600px;
+            max-height: 325px;
             border-radius: 5px;
             position: absolute;
             right: 0;
@@ -64,6 +91,8 @@
             .project-title {
                 margin: 0 0 15px 0;
                 font-size: 22px;
+                font-weight: bold;
+                padding: 0px;
             }
     
             .project-description {
@@ -71,7 +100,7 @@
                 background-color: $dark-gray;
                 border-radius: 5px;
                 padding: 20px;
-                margin: 0 0 10px 0;
+                margin: 15px 0 10px 0;
                 box-shadow: 0px 10px 15px -10px;
             }
     
@@ -116,6 +145,7 @@
         }
         h2 {
             font-size: 20px;
+            margin: 0 0 20px 0;
 
             &:after {
                 width: clamp(150px, 180px, 100%);

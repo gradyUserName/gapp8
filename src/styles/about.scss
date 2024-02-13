@@ -95,6 +95,7 @@
     @media (max-width: 700px) {
         h2 {
             font-size: 20px;
+            margin: 0 0 20px 0;
 
             &:after {
                 width: clamp(100px, 180px, 200px);
