@@ -75,7 +75,7 @@ const Experience = () => {
                         <p>
                             Training, development, and leadership of IT analysts on the 
                             University of Oklahoma IT Service Desk, as well as supervision of 
-                            four Service Centers accross the campus.
+                            four Service Centers across the campus.
                         </p>
                     </li>
                     <li>
