@@ -13,8 +13,9 @@ const Hero = () => {
             <h2>Grady Holder</h2>
             <h3>I make stuff for computers.</h3>
             <p>
-                I'm an ametuer coder specializing in web applications. 
-                But I've been known to dabble in Python... ;)
+                I'm an amateur, self-taught computer programmer specializing in
+                front-end development, but I've been known to dabble in back-end 
+                on occasion.
             </p>
             <button onClick={handleOpenResume}>Check out my resume!</button>
         </div>
