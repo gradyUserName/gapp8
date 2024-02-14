@@ -28,6 +28,24 @@
         color: $gray;
     }
 
+    button {
+        background: $black;
+        color: $white;
+        font-size: 16px;
+        border: 2px solid $yellow;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 25px 0 0 0;
+        transition: $transition;
+
+        &:hover,
+        &:focus {
+            transition: $transition;
+            transform: translate(-3px, -3px);
+            box-shadow: 3px 3px 0 0 $yellow;
+        }
+    }
+
     @media (max-width:700px) {
         h1 {
             font-size: 16px
