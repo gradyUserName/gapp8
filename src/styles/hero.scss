@@ -6,6 +6,7 @@
     align-items: flex-start;
     justify-content: center;
     min-height: 100vh;
+    max-width: 1000px;
 
     h1 {
         margin: 0 0 15px 0;
@@ -21,14 +22,17 @@
     h3 {
         margin: 0 0 15px 0;
         font-size: 50px;
+        text-align: left;
     }
     
     p {
         font-size: 20px;
         color: $gray;
+        text-align: left;
     }
 
     button {
+        align-self: center;
         background: $black;
         color: $white;
         font-size: 16px;
