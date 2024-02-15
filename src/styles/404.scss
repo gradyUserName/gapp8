@@ -1,10 +1,10 @@
 @import 'variables';
 
-main {
+.not-found {
     text-align: center;
 
     h1 {
-        margin: 20% 0 50px 0;
+        margin: 150px 0 50px 0;
     }
 
     p {
@@ -15,6 +15,8 @@ main {
     .home {
         font-size: 18px;
         display: block;
+        width: 100px;
+        margin: 0 auto;
         border: 2px solid $yellow;
         border-radius: 10px;
         padding: 10px 20px;
