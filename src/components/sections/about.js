@@ -9,19 +9,19 @@ const About = () => {
             <div className="about-main">
                 <p>
                     Hello! My name is Grady. I am a self-taught coder living in Oklahoma City.
-                    I started learning to code in 2021 when I decided to create scripts for 
+                    I started learning to code in 2021 when I learned to create scripts for 
                     a legacy system at work that was otherwise very complicated, sensitive to 
-                    mistypes, and all around user-unfriendly. I always thought that I wasn't 
-                    smart enough for coding, but that project started to change the way I thought, 
-                    and seeing the scripts in action, and seeing how much time and headache they saved 
-                    people, sparked a genuine love of code that continues to this day.
+                    mistypes, and all around user-unfriendly. Not only did that experience open 
+                    my eyes to the fun, puzzle solving nature of coding, but seeing my work save 
+                    people a lot of time and headache sparked a love of programming that has only 
+                    continued to grow.
                 </p>
                 <p>
                     In January of 2022, I made a simple New Year's resolution: Spend 30 minutes learning 
                     to code every day. Pretty soon, 30 minutes a day turned into 45 minutes a day, 
-                    turned into an hour a day, et cetera. Now, I spend pretty much all of my free 
-                    time learning or working on projects in hopes of eventually getting to do this 
-                    professionally.
+                    turned into an hour a day, et cetera. Now, I spend most of my free time 
+                    learning to use new technologies and working on projects to practice what I've learned, 
+                    further honing my skills.
                 </p>
             </div>
             <div className="about-techs">
