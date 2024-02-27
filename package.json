@@ -15,7 +15,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "firebase": "^10.8.0",
     "gatsby": "^5.13.1",
     "gatsby-plugin-sass": "^6.13.0",
     "react": "^18.2.0",
