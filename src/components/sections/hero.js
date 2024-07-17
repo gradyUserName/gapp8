@@ -14,8 +14,7 @@ const Hero = () => {
             <h3>I make stuff for computers.</h3>
             <p>
                 I'm an amateur, self-taught computer programmer specializing in
-                front-end development, but I've been known to dabble in back-end 
-                on occasion.
+                front-end development, but I also know a bit of back-end.
             </p>
             <button onClick={handleOpenResume}>Check out my resume!</button>
         </div>
